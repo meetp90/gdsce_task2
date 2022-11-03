@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Overpass:wght@100;200;700&family=Playfair+Display:ital,wght@1,400;1,500&family=Raleway:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>DreamHouse</title>
+
+</head>
+<body class="font-['Open_Sans']">
+ 
+  
+  <header style="background-image:url('https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2334&q=80') ;" class=" relative w-full h-[40rem] bg-cover bg-no-repeat bg-center ">
+  <nav class="container px-10 sm:px-6 md:px-44 pt-10 flex flex-row justify-between ">
+    <a href="">
+      <h2 class="text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">DreamHouse</h2>
+    </a>
+<div class="">
+ 
+<ul class=" hidden  md:flex flex-row text-white font-medium space-x-5  ">
+  <li ><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> About</a></li>
+ <li><a class=" hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href="">Buy</a></li>
+  <li><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> Sell</a></li>
+  <li ><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> Rent</a></li>
+  <li><a  class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block "href="">support</a></li>
+</ul>
+</div>
+<!------- menu-button ------------>
+<button id="menu-btn" class=" block   md:hidden">
+  <img    src="./icon-hamburger.svg" alt="">
+</button>
+</nav>
+<div class="container  m-auto md:ml-44 p-10 mt-32 border-4 border-solid rounded border-slate-100 h-64 w-[24rem] sm:h-60 md:h-72 max-h-96 sm:w-[40rem] ">
+<h1 class="uppercase text-5xl sm:text-6xl md:text-7xl  text-black ">Find it. Tour it. Own it.</h1>
+</div>
+<!------- mobile menu ----------->
+<div id="menu-list" class="text-white bg-black max-w-sm h-[35rem] w-[40rem] pt-12 text-left font-bold absolute top-28 pl-12 left-8 mx-auto hidden flex-col space-y-24 ">
+  <div class=" flex   space-x-24">
+  <a href="">
+    <h2 class="text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">DreamHouse</h2>
+  </a>
+  <!-- close button -->
+  <button id="close-btn">
+  </button>
+</div>
+  <ul class="   flex flex-col  space-y-12 ">
+    <li ><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-full hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> About</a></li>
+   <li><a class=" hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-full hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href="">Buy</a></li>
+    <li><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-full hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> Sell</a></li>
+    <li ><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-full hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> Rent</a></li>
+    <li><a  class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-full hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block "href="">support</a></li>
+  </ul>
+  </div>
+  <!------ end of mobile menu ------>
+</header>
+ <!--------- End of Header ------------------>
+  <!--------- Leader Section ------------------>
+<section class=" relative justify-center mt-28 md:mt-20 w-full h-[40rem] px-6 md:px-32 flex flex-col  md:flex-row">
+<div class="mb-16 ">
+  <img class="md:bottom-0 md:left-44 md:z-0 md:absolute " src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80" alt="" height="691" width="473">
+</div>
+<div class="bg-white text-center md:right-52  md:w-[35rem] h-[20rem] md:bottom-0  md:z-50 md:p-10 md:absolute">
+  <h2 class="uppercase text-5xl md:text-6xl mb-6 text-slate-900">To each their own home.</h2>
+<p class="text-slate-500  ">Let’s find a home that is perfect for you and your family. Helping 100 million people to get their dream houses.Find your Dream Home from 5 Lakh+ properties on DreamHouse Find 327000+ Properties for Sale.</p>
+</div>
+</section>
+ <!--------- Btn section ------------------>
+ <section class="hidden  sm:block sm:mt-24 md:mt-32 mb-16 w-full h-24   ">
+  <div class="flex  sm:px-14  md:px-44 pt-7 justify-between">
+    <h2 class="uppercase sm:text-4xl md:text-6xl  text-black">Our Features</h2>
+    <!-- <button class="  hover:text-emerald-50 hover:bg-black rounded-sm border-2 border-solid border-black  px-16 py-2">See all</button> -->
+  </div>
+  </section>
+ <!--------- Grid Section ------------------>
+ <section class=" mt-24 sm:mb-20 md:mb-10 sm:mt-20 md:mt-32 mb-10  w-full md:h-[65rem] px-6 sm:px-8 md:px-44  ">
+<div class="grid auto-rows-auto w-fit mx-auto  sm:grid-cols-2 md:grid-cols-4 grid-cols-1 gap-6   justify-center">
+<!-- heading-Our creations -->
+    <h2 class=" md:hidden mb-10  sm:hidden uppercase text-4xl text-center text-black">Our Features</h2>
+    <div class="container relative  ">
+      <a href=""><img  class="hidden sm:block md:block"src="./image-deep-earth-Desktop.jpg" alt=""></a>
+      <a href=""><img  class=" block sm:hidden md:hidden"src="./image-deep-earth-mobile.jpg" alt="" height="256" width="450"></a>
+      <h3 class="uppercase text-3xl text-white absolute bottom-6 left-6 ">Anywhere <br> on Earth</h3>
+    </div>
+    <!-- end of heading -->
+    <div class="container relative  "> 
+      <a href=""><img class="hidden sm:block md:block" src="./image-pocket-borealis-desktop.jpg" alt=""></a>
+      <a href=""><img  class=" block sm:hidden md:hidden" src="./image-pocket-borealis-mobile.jpg" alt=""></a>
+      <h3 class="uppercase text-3xl text-white  absolute bottom-6 left-6">Amazing <br> view </h3>
+    </div>
+    <div class="container relative"> 
+      <a href=""><img class="hidden sm:block md:block" src="./image-from-above-desktop.jpg" alt=""></a>
+      <a href=""><img  class=" block sm:hidden md:hidden" src="./image-from-above-mobile.jpg" alt="" ></a>
+      <h3 class="uppercase text-3xl text-white  absolute bottom-6 left-2">Easily <br>accessible</h3>
+    </div>
+   
+    <button class="  hover:text-emerald-50 hover:bg-black rounded-sm border-2 border-solid border-black  px-20 py-4">See all</button>
+</div>
+  </div>
+ </section>
+ <!---------- footer ---------------->
+ <footer class="w-full h-[30rem] sm:h-36 bg-black py-8  sm:px-6  md:px-44">
+  <div class="flex flex-col sm:flex-row items-center  sm:justify-between ">
+  <div class="flex flex-col mt-7 sm:mt-0">
+<a href="">
+  <h2 class="text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">DreamHouse</h2>
+</a>
+  <ul class="  mt-10 sm:mt-5 flex flex-col sm:flex-row text-slate-50 items-center  justify-between font-medium leading-10 sm:leading-none sm:space-x-5 ">
+    <li ><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> About</a></li>
+   <li><a class=" hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href="">Buy</a></li>
+    <li><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> Sell</a></li>
+    <li ><a class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block " href=""> Rent</a></li>
+    <li><a  class="hover:text-green-300 hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block "href="">support</a></li>
+  </ul>
+</div>
+<div class="flex flex-col align-middle sm:m-0 m-8 items-center ">
+<div class="flex space-x-5">
+  <a class=" hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block" href=""><img src="./icon-facebook.svg" alt=""></a>
+  <a class=" hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block" href=""><img src="./icon-twitter.svg" alt=""></a>
+  <a class=" hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block" href=""><img src="./icon-pinterest.svg" alt=""></a>
+  <a class=" hover:before:transition transform hover:before:block hover:before:absolute hover:before:rounded-md hover:before:h-1 hover:before:w-2/3 hover:before:-bottom-2 hover:before:inset-x-0 hover:before:bg-green-300 relative inline-block" href=""><img src="./icon-instagram.svg" alt=""></a>
+  </div>
+<p class="text-green-300 mt-5 ">&copy; 2022  All rights reserved.</p>
+</div>
+</div>
+ </footer>
+ <script src="main.js"></script>
+</body>
+</html>
